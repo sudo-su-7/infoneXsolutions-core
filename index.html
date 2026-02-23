@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infonex Solutions — Cybersecurity & Secure Infrastructure</title>
+  <meta name="description" content="Professional cybersecurity services for SMEs and educational institutions in Nakuru, Kenya. Website audits, network scans, firewall setup, and more." />
+  <meta name="keywords" content="cybersecurity Kenya, network security Nakuru, website security audit, firewall setup Kenya, Infonex Solutions" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts: Rajdhani (display) + Source Sans 3 (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+      <div class="brand-icon">
+        <i class="bi bi-shield-fill-check"></i>
+      </div>
+      <div>
+        <span class="brand-name">INFONEX</span>
+        <span class="brand-sub d-block">SOLUTIONS</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why-us">Why Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-danger btn-sm px-4 py-2 nav-cta" href="#contact">
+            Free Consultation
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="hero">
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-scan-line"></div>
+  <canvas id="particleCanvas"></canvas>
+
+  <div class="container hero-content">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-7">
+        <div class="hero-tag mb-3">
+          <span class="tag-dot"></span>
+          CYBERSECURITY / &amp; SECURE INFRASTRUCTURE
+        </div>
+        <h1 class="hero-title">
+          SECURING<br />
+          <span class="text-danger">YOUR</span><br />
+          <span class="hero-title-outline">BUSINESS</span>
+        </h1>
+        <p class="hero-sub mt-4">
+          Professional cybersecurity services for SMEs and educational institutions.<br />
+          Serving <strong>Nairobi, Nakuru</strong> &amp; Beyond.
+        </p>
+        <div class="hero-badges mt-4 mb-5 d-flex flex-wrap gap-3">
+          <span class="hero-badge"><i class="bi bi-geo-alt-fill text-danger me-1"></i>Nakuru-Based</span>
+          <span class="hero-badge"><i class="bi bi-shield-check text-danger me-1"></i>Enterprise-Grade</span>
+          <span class="hero-badge"><i class="bi bi-currency-exchange text-danger me-1"></i>SME-Friendly Rates</span>
+        </div>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#services" class="btn btn-danger btn-lg px-5">Our Services</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg px-5">Get a Free Consult</a>
+        </div>
+      </div>
+      <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+        <div class="hero-lock-container">
+          <div class="hero-lock-ring ring-3"></div>
+          <div class="hero-lock-ring ring-2"></div>
+          <div class="hero-lock-ring ring-1"></div>
+          <div class="hero-lock-icon">
+            <i class="bi bi-shield-lock-fill"></i>
+          </div>
+          <div class="hex hex-1">AUDIT</div>
+          <div class="hex hex-2">SECURE</div>
+          <div class="hex hex-3">MONITOR</div>
+          <div class="hex hex-4">HARDEN</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS TICKER
+============================================================ -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="row g-0 text-center">
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-num" data-target="500">0</div>
+        <div class="stat-label">Devices Secured</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-num" data-target="50">0</div>
+        <div class="stat-label">Clients Served</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-num" data-target="100">0</div>
+        <div class="stat-label">Threats Removed</div>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <div class="stat-num" data-target="24">0</div>
+        <div class="stat-label">Hr Support Available</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+<section id="about" class="section-dark">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <div class="about-visual">
+          <div class="about-code-block">
+            <div class="code-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="code-title ms-2">infonex_init.sh</span>
+            </div>
+            <pre class="code-body"><span class="c-comment"># Infonex Solutions</span>
+<span class="c-comment"># Nakuru, Kenya</span>
+
+<span class="c-keyword">function</span> <span class="c-fn">secure_your_org</span>() {
+  <span class="c-var">$audit</span>  = run_assessment()
+  <span class="c-var">$patch</span>  = fix_vulns(<span class="c-var">$audit</span>)
+  <span class="c-var">$harden</span> = lock_it_down()
+  <span class="c-var">$watch</span>  = monitor_24_7()
+
+  <span class="c-keyword">return</span> <span class="c-string">"Your org is safe"</span>
+}
+
+<span class="c-comment"># Serving SMEs &amp; Schools</span>
+<span class="c-fn">secure_your_org</span>()
+<span class="c-success">✓ Done. Sleep well.</span></pre>
+          </div>
+          <div class="about-tag-pill">
+            <i class="bi bi-geo-alt-fill text-danger"></i>
+            Nairobi &bull; Nakuru &bull; Beyond
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="section-label mb-2">WHO WE ARE</div>
+        <h2 class="section-title">Local Expertise.<br /><span class="text-danger">Enterprise-Grade</span> Security.</h2>
+        <p class="section-body mt-3">
+          Infonex Solutions is a Nakuru-based cybersecurity and technology firm dedicated to protecting 
+          small and medium-sized enterprises, schools, and individuals from the ever-growing threat 
+          landscape of the digital world.
+        </p>
+        <p class="section-body">
+          As a proudly Kenyan firm, we understand the unique technology challenges facing local 
+          organisations — from underfunded IT infrastructure and device security to network vulnerabilities 
+          and data protection concerns. We bring professional-grade expertise with the accessibility 
+          and flexibility of a local partner.
+        </p>
+        <div class="row g-3 mt-2">
+          <div class="col-sm-6">
+            <div class="value-card">
+              <i class="bi bi-patch-check-fill text-danger value-icon"></i>
+              <strong>Integrity</strong>
+              <p>Honest, transparent, ethical in every engagement.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="value-card">
+              <i class="bi bi-lightning-charge-fill text-danger value-icon"></i>
+              <strong>Responsiveness</strong>
+              <p>Local, available, and fast. Personal service big firms can't match.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="value-card">
+              <i class="bi bi-currency-exchange text-danger value-icon"></i>
+              <strong>Accessibility</strong>
+              <p>Enterprise-grade security at SME-friendly rates.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="value-card">
+              <i class="bi bi-eye-slash-fill text-danger value-icon"></i>
+              <strong>Confidentiality</strong>
+              <p>Every engagement handled with strict professional discretion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+============================================================ -->
+<section id="services" class="section-darker">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-label mb-2">WHAT WE DO</div>
+      <h2 class="section-title">Our <span class="text-danger">Services</span></h2>
+      <p class="section-sub">Three service lines covering every digital security need</p>
+    </div>
+
+    <!-- Service Tabs -->
+    <ul class="nav service-tabs justify-content-center mb-5" id="serviceTabs">
+      <li class="nav-item">
+        <button class="service-tab active" data-target="business">
+          <i class="bi bi-building-lock me-2"></i>Business Security
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="service-tab" data-target="campus">
+          <i class="bi bi-laptop me-2"></i>Campus & Students
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="service-tab" data-target="dev">
+          <i class="bi bi-cloud-arrow-up me-2"></i>Dev & Hosting
+        </button>
+      </li>
+    </ul>
+
+    <!-- Business Services -->
+    <div class="service-panel active" id="panel-business">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-globe2"></i></div>
+            <h5>Website Security Audits</h5>
+            <p>Full scan of your website — vulnerabilities, misconfigs, outdated plugins, exposure risks. Written report included.</p>
+            <span class="service-price">From KES 5,000</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-diagram-3-fill"></i></div>
+            <h5>Network Security Scans</h5>
+            <p>Scan of your LAN/WiFi — open ports, rogue devices, firewall gaps. Full written assessment.</p>
+            <span class="service-price">From KES 6,000</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-fire"></i></div>
+            <h5>SSL/TLS & Firewall Setup</h5>
+            <p>Install HTTPS certificates and configure firewall rules to block unauthorized access and harmful traffic.</p>
+            <span class="service-price">From KES 2,500</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-server"></i></div>
+            <h5>Server & VPS Hardening</h5>
+            <p>Linux server lockdown — SSH config, user policies, service minimization, update management.</p>
+            <span class="service-price">From KES 7,000</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-bug-fill"></i></div>
+            <h5>Vulnerability Assessment</h5>
+            <p>Systematic risk review of all your digital assets with a written report and risk-rated recommendations.</p>
+            <span class="service-price">From KES 8,000</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-activity"></i></div>
+            <h5>Managed Security Maintenance</h5>
+            <p>Ongoing monitoring and maintenance to keep your systems protected month after month. Full reports included.</p>
+            <span class="service-price">From KES 5,000/mo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Campus Services -->
+    <div class="service-panel" id="panel-campus">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-shield-shaded"></i></div>
+            <h5>Laptop Security Cleanup</h5>
+            <p>Remove threats, clean junk files, harden settings. Fast turnaround, per device.</p>
+            <span class="service-price">KES 800 – 1,500 / device</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-virus"></i></div>
+            <h5>Malware Removal</h5>
+            <p>Full malware, virus, spyware removal with post-cleanup verification. Per device.</p>
+            <span class="service-price">KES 1,000 – 2,000 / device</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-terminal-fill"></i></div>
+            <h5>Linux Installation & Labs</h5>
+            <p>Setup Linux on student devices for CBC IT curriculum or cybersecurity studies. Bulk discounts available.</p>
+            <span class="service-price">KES 1,500 / device</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-wifi"></i></div>
+            <h5>Secure WiFi Configuration</h5>
+            <p>Proper segmentation of staff vs student WiFi, strong encryption, guest network setup.</p>
+            <span class="service-price">From KES 4,000</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <h5>Cybersecurity Lab Setup</h5>
+            <p>Install Kali Linux, security tools, and practice environments for student cyber clubs.</p>
+            <span class="service-price">From KES 10,000</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-tools"></i></div>
+            <h5>OS Install & Troubleshooting</h5>
+            <p>Fresh OS installations, driver setup, and technical fault resolution for Windows and Linux.</p>
+            <span class="service-price">KES 2,000 – 3,000 / device</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dev & Hosting Services -->
+    <div class="service-panel" id="panel-dev">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-phone-fill"></i></div>
+            <h5>Web & Mobile App Development</h5>
+            <p>Secure, responsive websites and mobile applications built with security best practices from day one.</p>
+            <span class="service-price">Custom Quote</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-cart4"></i></div>
+            <h5>E-Commerce Solutions</h5>
+            <p>Secure online stores with payment integration, SSL, and data protection built in.</p>
+            <span class="service-price">Custom Quote</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-cloud-check-fill"></i></div>
+            <h5>Cloud Hosting & Management</h5>
+            <p>Reliable, managed cloud hosting with regular backups and performance monitoring.</p>
+            <span class="service-price">Monthly Plans</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-database-fill-lock"></i></div>
+            <h5>Data Backup & Disaster Recovery</h5>
+            <p>Automated backup solutions and tested recovery plans to protect critical institutional data.</p>
+            <span class="service-price">Custom Quote</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-eye-fill"></i></div>
+            <h5>24/7 Security Monitoring</h5>
+            <p>Continuous monitoring of your systems to detect and respond to threats in real time.</p>
+            <span class="service-price">Monthly Plans</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-puzzle-fill"></i></div>
+            <h5>API Integration</h5>
+            <p>Secure API connections between your systems, third-party services, and payment gateways.</p>
+            <span class="service-price">Custom Quote</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY US
+============================================================ -->
+<section id="why-us" class="section-dark">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-label mb-2">OUR EDGE</div>
+      <h2 class="section-title">Why Choose <span class="text-danger">Infonex</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="why-card">
+          <div class="why-number">01</div>
+          <i class="bi bi-geo-alt-fill why-icon"></i>
+          <h5>Local Presence</h5>
+          <p>Based in Nakuru. Fast on-site response times. We understand the local operating environment — no corporate markups or remote-only support.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="why-card">
+          <div class="why-number">02</div>
+          <i class="bi bi-mortarboard-fill why-icon"></i>
+          <h5>School & Campus Expertise</h5>
+          <p>We understand the unique IT needs of educational institutions — student devices, lab security, CBC digital literacy, and data protection.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="why-card">
+          <div class="why-number">03</div>
+          <i class="bi bi-cash-coin why-icon"></i>
+          <h5>Affordable Rates</h5>
+          <p>Professional-grade cybersecurity at SME and school-friendly pricing. Honest assessments — we tell you what you need, not what earns us the most.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="why-card">
+          <div class="why-number">04</div>
+          <i class="bi bi-file-earmark-text-fill why-icon"></i>
+          <h5>Full Written Reports</h5>
+          <p>Every assessment comes with a detailed written report — findings, risk ratings, and remediation roadmap. No vague verbal feedback.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="why-card">
+          <div class="why-number">05</div>
+          <i class="bi bi-lock-fill why-icon"></i>
+          <h5>Strict Confidentiality</h5>
+          <p>Every engagement is covered by a Non-Disclosure Agreement (NDA) and our Rules of Engagement (RoE). Your data stays private, always.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="why-card">
+          <div class="why-number">06</div>
+          <i class="bi bi-whatsapp why-icon"></i>
+          <h5>Always Reachable</h5>
+          <p>Reachable via phone and WhatsApp for urgent support. We don't hide behind ticketing systems — you get a real person, fast.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHO WE SERVE
+============================================================ -->
+<section class="section-darker serve-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-label mb-2">OUR CLIENTS</div>
+      <h2 class="section-title">Who We <span class="text-danger">Serve</span></h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-sm-6 col-lg-4">
+        <div class="serve-card">
+          <i class="bi bi-building-check serve-icon"></i>
+          <h5>Schools & Universities</h5>
+          <p>Protecting student data, networks, and devices in educational environments across Kenya.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="serve-card">
+          <i class="bi bi-briefcase-fill serve-icon"></i>
+          <h5>Small & Medium Businesses</h5>
+          <p>Helping SMEs defend their digital assets, customer data, and business systems from threats.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="serve-card">
+          <i class="bi bi-rocket-takeoff-fill serve-icon"></i>
+          <h5>Startups & E-Commerce</h5>
+          <p>Securing new ventures from day one with proper infrastructure, HTTPS, and secure hosting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+============================================================ -->
+<section id="pricing" class="section-dark">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-label mb-2">RETAINER PLANS</div>
+      <h2 class="section-title">Managed Security <span class="text-danger">Plans</span></h2>
+      <p class="section-sub">For schools and businesses that want ongoing protection without the IT headache</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="price-card">
+          <div class="price-header">
+            <div class="price-badge">BASIC</div>
+            <div class="price-amount">KES 5,000<span>/month</span></div>
+          </div>
+          <ul class="price-features">
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>1 monthly on-site check-in visit</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Website security monitoring</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Email &amp; WhatsApp support</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Priority response time</li>
+            <li class="muted"><i class="bi bi-x-circle me-2"></i>Network monitoring</li>
+            <li class="muted"><i class="bi bi-x-circle me-2"></i>Device cleanups</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-danger w-100 mt-3">Get Started</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="price-card price-card-featured">
+          <div class="price-popular">MOST POPULAR</div>
+          <div class="price-header">
+            <div class="price-badge">STANDARD</div>
+            <div class="price-amount">KES 10,000<span>/month</span></div>
+          </div>
+          <ul class="price-features">
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>2 monthly on-site visits</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Website + network monitoring</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>2 device cleanups per month</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Staff support &amp; training</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Monthly security report</li>
+            <li class="muted"><i class="bi bi-x-circle me-2"></i>Unlimited device cleanups</li>
+          </ul>
+          <a href="#contact" class="btn btn-danger w-100 mt-3">Get Started</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="price-card">
+          <div class="price-header">
+            <div class="price-badge">PREMIUM</div>
+            <div class="price-amount">KES 18,000<span>/month</span></div>
+          </div>
+          <ul class="price-features">
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Weekly remote monitoring</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Quarterly vulnerability scan</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Unlimited device cleanups</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Dedicated account manager</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Full quarterly security report</li>
+            <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Emergency on-site response</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-danger w-100 mt-3">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center mt-4 pricing-note">
+      <i class="bi bi-info-circle text-danger me-1"></i>
+      All prices are in KES and negotiable for 6-month or annual contracts. One-time services available — <a href="#contact" class="text-danger">contact us</a> for a custom quote.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+============================================================ -->
+<section class="section-darker">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-label mb-2">THE PROCESS</div>
+      <h2 class="section-title">How It <span class="text-danger">Works</span></h2>
+    </div>
+    <div class="row g-0 process-row">
+      <div class="col-12 col-md-2">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <div class="process-icon"><i class="bi bi-telephone-fill"></i></div>
+          <h6>Free Consult</h6>
+          <p>Contact us for a no-obligation initial consultation</p>
+        </div>
+      </div>
+      <div class="process-arrow col-12 col-md-1"><i class="bi bi-arrow-right-short"></i></div>
+      <div class="col-12 col-md-2">
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <div class="process-icon"><i class="bi bi-search"></i></div>
+          <h6>Assessment</h6>
+          <p>We assess your current security posture</p>
+        </div>
+      </div>
+      <div class="process-arrow col-12 col-md-1"><i class="bi bi-arrow-right-short"></i></div>
+      <div class="col-12 col-md-2">
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <div class="process-icon"><i class="bi bi-file-earmark-check-fill"></i></div>
+          <h6>Proposal</h6>
+          <p>We propose a tailored plan and confirm pricing</p>
+        </div>
+      </div>
+      <div class="process-arrow col-12 col-md-1"><i class="bi bi-arrow-right-short"></i></div>
+      <div class="col-12 col-md-2">
+        <div class="process-step">
+          <div class="process-num">04</div>
+          <div class="process-icon"><i class="bi bi-tools"></i></div>
+          <h6>We Work</h6>
+          <p>Services commence within agreed timeframe</p>
+        </div>
+      </div>
+      <div class="process-arrow col-12 col-md-1"><i class="bi bi-arrow-right-short"></i></div>
+      <div class="col-12 col-md-2">
+        <div class="process-step">
+          <div class="process-num">05</div>
+          <div class="process-icon"><i class="bi bi-clipboard2-check-fill"></i></div>
+          <h6>Report</h6>
+          <p>Full written report delivered and signed off</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact" class="section-dark">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="section-label mb-2">GET IN TOUCH</div>
+        <h2 class="section-title">Contact <span class="text-danger">Us</span></h2>
+        <p class="section-body mt-3">
+          Ready to secure your organisation? Contact us for a FREE initial consultation. 
+          We're available via phone, WhatsApp, or email — whichever works best for you.
+        </p>
+
+        <div class="contact-info mt-4">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <div class="contact-label">Phone & WhatsApp</div>
+              <a href="tel:+254795800229" class="contact-value">+254 795 800229</a><br />
+              <a href="tel:+254114216505" class="contact-value">0114 216505</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:infonexsolutions2@gmail.com" class="contact-value">infonexsolutions2@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-globe2"></i></div>
+            <div>
+              <div class="contact-label">Website</div>
+              <a href="https://www.infonexsolutions.com" class="contact-value">www.infonexsolutions.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="contact-label">Location</div>
+              <span class="contact-value">Nakuru, Kenya</span><br />
+              <span class="contact-value text-muted">Servicing Nairobi, Nakuru &amp; Beyond</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links mt-4 d-flex gap-3">
+          <a href="https://instagram.com/infonexsolutions" class="social-btn" target="_blank" rel="noopener">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://tiktok.com/@infonexsolutions" class="social-btn" target="_blank" rel="noopener">
+            <i class="bi bi-tiktok"></i>
+          </a>
+          <a href="https://wa.me/254795800229" class="social-btn" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="contact-form-card">
+          <h5 class="mb-4">Request a Free Consultation</h5>
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-control inp" id="name" placeholder="Your name" required />
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label">Organisation</label>
+                <input type="text" class="form-control inp" id="org" placeholder="School / Business name" />
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label">Phone / WhatsApp *</label>
+                <input type="tel" class="form-control inp" id="phone" placeholder="+254 7XX XXX XXX" required />
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control inp" id="email" placeholder="your@email.com" />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Service Interested In</label>
+                <select class="form-select inp" id="service">
+                  <option value="">Select a service...</option>
+                  <option>Website Security Audit</option>
+                  <option>Network Security Scan</option>
+                  <option>SSL/TLS & Firewall Setup</option>
+                  <option>Server & VPS Hardening</option>
+                  <option>Vulnerability Assessment</option>
+                  <option>Managed Security Retainer</option>
+                  <option>Campus / Student Tech Support</option>
+                  <option>Cybersecurity Lab Setup</option>
+                  <option>Web / App Development & Hosting</option>
+                  <option>Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control inp" id="message" rows="4" placeholder="Tell us about your organisation and what you need help with..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-danger w-100 py-3 submit-btn">
+                  <i class="bi bi-send-fill me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+          <div id="formSuccess" class="form-success d-none mt-3">
+            <i class="bi bi-check-circle-fill text-danger me-2"></i>
+            Thank you! We'll be in touch within 24 hours. You can also WhatsApp us directly at +254 795 800229.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div class="brand-icon small"><i class="bi bi-shield-fill-check"></i></div>
+          <div>
+            <span class="brand-name">INFONEX</span>
+            <span class="brand-sub d-block">SOLUTIONS</span>
+          </div>
+        </div>
+        <p class="footer-body">Cybersecurity &amp; Secure Infrastructure for SMEs and educational institutions across Kenya. Professional-grade security at local rates.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://instagram.com/infonexsolutions" class="social-btn sm" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+          <a href="https://tiktok.com/@infonexsolutions" class="social-btn sm" target="_blank" rel="noopener"><i class="bi bi-tiktok"></i></a>
+          <a href="https://wa.me/254795800229" class="social-btn sm" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-heading">Services</h6>
+        <ul class="footer-links">
+          <li><a href="#services">Website Audits</a></li>
+          <li><a href="#services">Network Scans</a></li>
+          <li><a href="#services">Firewall Setup</a></li>
+          <li><a href="#services">Server Hardening</a></li>
+          <li><a href="#services">Managed Security</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-heading">Campus</h6>
+        <ul class="footer-links">
+          <li><a href="#services">Laptop Cleanup</a></li>
+          <li><a href="#services">Malware Removal</a></li>
+          <li><a href="#services">Linux Labs</a></li>
+          <li><a href="#services">WiFi Config</a></li>
+          <li><a href="#services">Cyber Lab Setup</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4">
+        <h6 class="footer-heading">Contact</h6>
+        <ul class="footer-links">
+          <li><i class="bi bi-telephone-fill text-danger me-2"></i><a href="tel:+254795800229">+254 795 800229</a></li>
+          <li><i class="bi bi-telephone-fill text-danger me-2"></i><a href="tel:+254114216505">0114 216505</a></li>
+          <li><i class="bi bi-envelope-fill text-danger me-2"></i><a href="mailto:infonexsolutions2@gmail.com">infonexsolutions2@gmail.com</a></li>
+          <li><i class="bi bi-globe2 text-danger me-2"></i><a href="https://www.infonexsolutions.com">www.infonexsolutions.com</a></li>
+          <li><i class="bi bi-geo-alt-fill text-danger me-2"></i>Nakuru, Kenya</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 Infonex Solutions. All rights reserved.</span>
+      <span>Nakuru, Kenya &mdash; Servicing Nairobi, Nakuru &amp; Beyond</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/254795800229?text=Hello%20Infonex%20Solutions%2C%20I%20would%20like%20a%20free%20consultation." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
