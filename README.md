@@ -54,4 +54,4 @@ Upload `index.html`, `css/`, `js/`, and `assets/` to:
 - `DEBUG` — Enable debug mode (default: true, set false in production)
 
 ## Contact
-Infonex Solutions | +254 795 800229 | infonexsolutions2@gmail.com
+Infonex Solutions |+254 711 4216505 or +254 795 800229 | infonexsolutions2@gmail.com
